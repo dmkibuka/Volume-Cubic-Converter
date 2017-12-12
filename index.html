@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Volume Converter</title>
+    <link rel="stylesheet" href="convert.css">
+</head>
+
+<body>
+
+    <section>
+        <div class="container">
+            <header>
+                <h1>Volume/Cubic Converter</h1>
+            </header>
+            <div id="input"><select name="weightSelect" id="weightType">
+                <option>Choose Cubic Units</option>
+                <option value="1">Cubic Inches</option>
+                <option value="2">Cubic Foot</option>
+                <option value="3">Cubic Yard</option>
+                <option value="4">Cubic Centimeter</option>
+                <option value="5">Cubic Meter</option>
+                <option value="6">Liter</option>
+                <option value="7">Gallon(US)</option>
+                <option value="8">Gallon(IM)</option>
+            </select></div>
+            <br />
+            <input type="number" id="weightValue" placeholder="Enter Volume.." value="">
+            <div id="output">
+                <div class="card cuin" id="inCard">
+                    <p>Cu Inches</p>
+                    <h4 id="toCuin"></h4>
+                </div>
+                <div class="card cuft" id="ftCard">
+                    <p>Cu Feet</p>
+                    <h4 id="toCuft"></h4>
+                </div>
+                <div class="card cuyd" id="ydCard">
+                    <p>Cu Yard</p>
+                    <h4 id="toCuyd"></h4>
+                </div>
+                <div class="card cucm" id="cmCard">
+                    <p>Cu Centimeter</p>
+                    <h4 id="toCucm"></h4>
+                </div>
+                <div class="card cume" id="meCard">
+                    <p>Cu Meter</p>
+                    <h4 id="toCume"></h4>
+                </div>
+                <div class="card liter" id="liCard">
+                    <p>Liter</p>
+                    <h4 id="toLiter"></h4>
+                </div>
+                <div class="card glus" id="glusCard">
+                    <p>Gallon(US)</p>
+                    <h4 id="toGlus"></h4>
+                </div>
+                <div class="card glim" id="glimCard">
+                    <p>Gallon(IM)</p>
+                    <h4 id="toGlim"></h4>
+                </div>
+                <div class="footnote">
+                    <p>** Has no practical implementations, use suggested units</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script type="text/javascript" src="convert.js"></script>
+</body>
+
+</html>
